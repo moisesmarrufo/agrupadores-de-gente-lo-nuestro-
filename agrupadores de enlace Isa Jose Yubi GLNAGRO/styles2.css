@@ -1,0 +1,131 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    --accent-yellow: #FFEB3B;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+    --bg-light: #F9F9F9;
+    --youtube-red: #FF0000;
+    --font-title: 'Fredoka', cursive;
+    --font-body: 'Montserrat', sans-serif;
+    --border-radius-lg: 30px;
+    --border-radius-sm: 15px;
+    --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --color-texto: #ffffff;
+    --gradiente-arriba: #880078;
+    --gradiente-abajo: #ff81f0;
+    --btn-web: #8400ff;
+    --btn-web-borde: #2a6bb8;
+    --btn-youtube: #8c00ff;
+    --btn-tiktok: #a646ff;
+    --btn-whatsapp: #cd25d3;
+    --btn-instagram: #cd25d3;
+
+    --btn-revista: #63ff8a;
+}
+
+/* Reseteo básico de márgenes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    background-image: url('assets/banner.webp'); ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #c7c7ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+      user-select: none;
+  cursor: default;
+}
+
+/* Contenedor principal estilo "tarjeta" */
+.contenedor {
+    background: linear-gradient(to bottom, var(--gradiente-arriba), var(--gradiente-abajo));
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+      user-select: none;
+  cursor: default;
+}
+
+/* Área del logo */
+.logo-contenedor {
+    text-align: center;
+    alignment-baseline: central;
+    user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+
+}
+
+/* Caja de marcador de posición para el logo */
+.logo-placeholder {
+   
+    
+    padding: 10px;
+    background-color: white;
+    color: #001188;
+    font-weight: 900;
+    font-size: 24px;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Contenedor de la lista de botones */
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos generales para todos los botones */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Posicionamiento del icono dentro del botón */
+.btn i {
+    position: absolute;
+    left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Clases específicas para cada botón */
+.btn-web { 
+    background-color: var(--btn-web);
+    border: 2px solid var(--btn-web-borde);
+}
+.btn-youtube { background-color: var(--btn-youtube); }
+.btn-tiktok { background-color: var(--btn-tiktok); }
+.btn-whatsapp { background-color: var(--btn-whatsapp); }
+.btn-instagram { background-color: var(--btn-instagram); }
+.btn-revista { background-color: var(--btn-revista); }
